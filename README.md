@@ -17,7 +17,18 @@ install_github("gcostaneto/frGIS")
 ```R
 require(frGIS)
 data(rice2)
-output = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3)
+
+#' Factorial regression
+#'--------------------------------------------------------------------------
+output = FR.model(df.y = rice2,intercept = T)
+
+output$coefficients   # genotypic coefficients
+output$sum.of.squares # anova output for each genotype
+output$frac.ss        # fraction of phenotypic variance explained by the effect of environment covariates
+
+#' Cross-validation
+#'--------------------------------------------------------------------------
+output = FRcv(df.y = y,f = .1,part.env = 1,intercept = T,boot=1E3) # 1000-boot, leaving one environment out plus 10% of the genotypes
 ```
 # References
 
