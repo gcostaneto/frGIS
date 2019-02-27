@@ -15,7 +15,7 @@ FRcv = function(df.y, f = .2 , part.env = 1,intercept=TRUE,boot=1E3,seed=3412,pa
   frac.ss= coef.hat = ss.hat   =  yHat = NULL
 
   for(REP in 1:boot){
-    cat(paste("running boot ",REP,"\n",sep=""))
+    cat(paste("running boot ",boot,"\n",sep=""))
     Model    = FR.sampling(df.y = df.y,f = f,part.env = part.env,intercept = intercept)
     yHat     = rbind(yHat,    data.frame(Model$yHat,          boot=REP))
     ss.hat   = rbind(ss.hat,  data.frame(Model$sum.of.squares,boot=REP))
