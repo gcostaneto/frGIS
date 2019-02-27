@@ -16,7 +16,11 @@ install_github("gcostaneto/frGIS")
 # Basic usage
 ```R
 require(frGIS)
+
+#' data set
+#'--------------------------------------------------------------------------
 data(rice2)
+head(rice2)
 
 #' Factorial regression
 #'--------------------------------------------------------------------------
@@ -28,7 +32,7 @@ output$frac.ss        # fraction of phenotypic variance explained by the effect 
 
 #' Cross-validation
 #'--------------------------------------------------------------------------
-output = FRcv(df.y = y,f = .1,part.env = 1,intercept = T,boot=1E3) # 1000-boot, leaving one environment out plus 10% of the genotypes
+output = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3) # 1000-boot, leaving one environment out plus 10% of the genotypes
 ```
 # References
 
