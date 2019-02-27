@@ -9,11 +9,10 @@ FRgis is a useful package for breeders and statisticians interested in guiding d
 The methodology of factorial regression integrated with thematic maps was proposed by Martins (2004) in his master's thesis at the Federal University of Goiás (UFG, Goias, Brazil), under the supervision of Professor João Batista Duarte, phD (jbduarte@ufg.br). The method was expanded by Costa Neto (2017) in his master's thesis at UFG-Embrapa (Brazilian Agricultural Research Corporation) partnership reaching the current molds. Currently this author is also responsible for the updates and maintenance of this package (germano.cneto@usp.br)
 
 # Install
-
-library(devtools);
-
+```R
+library(devtools)
 install_github("gcostaneto/frGIS")
-
+```
 # Basic usage
 ```R
 require(frGIS)
