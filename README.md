@@ -17,7 +17,7 @@ install_github("gcostaneto/frGIS")
 ```R
 require(frGIS)
 data(rice2)
-output = FRcv(df.y = rice.2,f = .1,part.env = 1,intercept = T,boot=1E3)
+output = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3)
 ```
 # References
 
