@@ -3,7 +3,8 @@ Yield adaptability analysis based on factorial regression and environmental cova
 
 # Install
 
-library(devtools)
+library(devtools);
+
 install_github("gcostaneto/frGIS")
 
 # Basic usage
