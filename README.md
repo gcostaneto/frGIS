@@ -19,7 +19,7 @@ output = FRcv(df.y = rice.2,f = .1,part.env = 1,intercept = T,boot=1E3)
 
 The methodology of factorial regression integrated with thematic maps was proposed by Martins (2004) in his master's thesis at the Federal University of Goiás (UFG, Goias, Brazil), under the supervision of Professor João Batista Duarte, phD (jbduarte@ufg.br). The method was expanded by Costa-Neto (2017) in his master's thesis at UFG-Embrapa (Brazilian Agricultural Research Corporation) partnership reaching the current molds. Currently this author is also responsible for the updates and maintenance of this package (germano.cneto@usp.br)
 
-## References
+# References
 
 Martins, A. S. (2004). Aplicação de sistema de informações geográficas no estudo da interação genótipos com ambientes. Mestrado em Agronomia, Escola de Agronomia e Engenharia de Alimentos. Universidade Federal de Goiás, Goiânia (in portuguese).
 
