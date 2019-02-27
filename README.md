@@ -28,4 +28,4 @@ Costa-Neto, G. M. F. (2017). Integrating environmental covariates and thematic m
 
 # Acknowledgements
 
-This study was financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) and Brazilian Agricultural Research Corporation
+This study was financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) and Brazilian Agricultural Research Corporation. Special thanks for the researchers Alexandre Bryan Heinemann, phD and Adriano Pereira de Castro, phD for the co-authored support for this methodological development
