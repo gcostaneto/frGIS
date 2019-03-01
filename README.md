@@ -14,6 +14,9 @@ library(devtools)
 install_github("gcostaneto/frGIS")
 ```
 # Basic usage
+
+### Factorial Regression with geographic covariates
+
 ```R
 require(frGIS)
 
@@ -34,6 +37,7 @@ output$frac.ss        # fraction of phenotypic variance explained by the effect 
 #'--------------------------------------------------------------------------
 output = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3) # 1000-boot, leaving one environment out plus 10% of the genotypes
 ```
+
 # References
 
 Martins, A. S. (2004). Aplicação de sistema de informações geográficas no estudo da interação genótipos com ambientes. Mestrado em Agronomia, Escola de Agronomia e Engenharia de Alimentos. Universidade Federal de Goiás, Goiânia (in portuguese).
