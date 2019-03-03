@@ -26,10 +26,10 @@ FR.sampling = function(df.y, f = .2 , part.env = 1,intercept=TRUE){
   cvp = unique.data.frame(Y[,c(1,4:ncol(Y))])
 
   Ycopy    = Y
-  tenv     =  unique(Ycopy$env)[sample(1:ENVS, size = part.env, replace = TRUE)]
+  tenv     =  as.character(unique(Ycopy$env)[sample(1:ENVS, size = part.env, replace = TRUE)])
   Ycopy$value[(Ycopy$env %in% tenv)] <- NA
 
-  tgid     = unique(Ycopy$gid)[sample(1:GIDS, size = round(GIDS * f), replace = TRUE)]
+  tgid     = as.character(unique(Ycopy$gid)[sample(1:GIDS, size = round(GIDS * f), replace = TRUE)])
   Ycopy$value[(Ycopy$gid %in% tgid)] <- NA
 
   Ycopy    = Ycopy[complete.cases(Ycopy),]
