@@ -38,11 +38,11 @@ FR.sampling = function(df.y, f = .2 , part.env = 1,intercept=TRUE){
 
   yHat     = data.frame(melt(predict.FR(out.p,cvp,intercept = intercept)))
   names(yHat)  = c("env","gid","yHat")
-  yHat = data.frame(merge(yHat,Y,by=c("env","gid")),pop=NA)
-  yHat$pop[( yHat$env %in% tenv )  &   (yHat$gid %in% tgid)]   = "New MET"
-  yHat$pop[ (yHat$env %in% tenv )  &  !(yHat$gid %in% tgid)]   = "New Location"
-  yHat$pop[!(yHat$env %in% tenv )  &   (yHat$gid %in% tgid)]   = "New Genotype"
-  yHat$pop[!( yHat$env %in% tenv)  &  !(yHat$gid %in% tgid)]   = "Within MET"
+  yHat = data.frame(merge(x=yHat,y=Y,by=c("env","gid")),pop=NA,)
+  yHat$pop[( Y$env %in% tenv )  &   (Y$gid %in% tgid)]   = "New MET"
+  yHat$pop[ (Y$env %in% tenv )  &  !(Y$gid %in% tgid)]   = "New Location"
+  yHat$pop[!(Y$env %in% tenv )  &   (Y$gid %in% tgid)]   = "New Genotype"
+  yHat$pop[!(Y$env %in% tenv)   &  !(Y$gid %in% tgid)]   = "Within MET"
 
 
   return(list(yHat=yHat,sum.of.squares=out.p$'sum.of.squares',coefficients=out.p$'coefficients',frac.ss=out.p$"frac.ss"))
