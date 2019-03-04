@@ -36,6 +36,13 @@ output$frac.ss        # fraction of phenotypic variance explained by the effect 
 #' Cross-validation
 #'--------------------------------------------------------------------------
 output = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3) # 1000-boot, leaving one environment out plus 10% of the genotypes
+
+#- Examples
+#'--------------------------------------------------------------------------
+met1 = FRcv(df.y = rice1,f = .1,part.env = 1,intercept = T,boot=1E3) 
+met2 = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3) 
+
+
 ```
 
 # References
