@@ -1,5 +1,6 @@
 
 
+## adicionar if else para intercepeto
 
 summary.FRcv = function(fr.object){
   require(Rmisc)

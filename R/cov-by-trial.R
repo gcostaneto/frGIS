@@ -1,12 +1,10 @@
-#' Collects environmental covariables from rasters files and geographic information
+#' Collection of environmental covariables from raster files and geographic coordinates.
 #'
-#'
-#'
-#' @param cov.raster is a raster stack object containing layers of environmental covariates
-#' @param reference is a data.frame containing geographic coordinate information for each location or test to be sampled
-#' @param latd  is a latitude reference vector within referebce data.frame
-#' @param long  is a latitude reference vector within referebce data.frame
-#' @param trial  is a trial or locaion id within referebce data.frame
+#' @param cov.raster is a raster or a raster stack object for environmental covariates
+#' @param reference  is a data.frame object containing the identifiers of places (or environments) and their geographic coordinates of latitude and longitude.
+#' @param long name of the longitude vector inserted in the reference data.frame
+#' @param latd name of the latitude vector inserted in the reference data.frame
+#' @param trial name of the trial vector inserted in the reference data.frame
 #' @author  Germano M F Costa Neto
 
 
@@ -17,9 +15,9 @@ cov.by.trial <-function(cov.raster,reference, long, latd, trial){
   Site = leg[,trial]
   coordinates(loc)= ~x+y
   proj4string(loc) = CRS("+proj=longlat +datum=WGS84")
-
+  
   for(i in 1:length(names(cov.raster))){Site = cbind(Site,data.frame(extract(cov.raster[[i]], loc)))}
   names(Site)[-1] = names(cov.raster)
-  ret8urn(data.frame(unique(Site)))
+  return(data.frame(unique(Site)))
 }
 
