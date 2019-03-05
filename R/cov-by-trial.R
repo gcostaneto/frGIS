@@ -20,6 +20,6 @@ cov.by.trial <-function(cov.raster,reference, long, latd, trial){
 
   for(i in 1:length(names(cov.raster))){Site = cbind(Site,data.frame(extract(cov.raster[[i]], loc)))}
   names(Site)[-1] = names(cov.raster)
-  return(data.frame(unique(Site)))
+  ret8urn(data.frame(unique(Site)))
 }
 
