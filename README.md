@@ -51,7 +51,7 @@ summary.FRcv(met1)$frac.ss
 # Predicting yield adaptability trends (Surface trend analysis with yield adaptability)
 require(plyr)
 
-coef.1 = dcast(summary.FRcv(met1)$coefficient, formula = gid~variable)
+coef.1 = dcast(summary.FRcv(met1)$coefficients, formula = gid~variable)
 coef.2 = dcast(summary.FRcv(met2)$coefficients, formula = gid~variable)
 
 output1 = predict.Ad(b=coef.1,cov.raster = cov.coord,intercept = T)
