@@ -42,7 +42,11 @@ output = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3) # 1000-bo
 met1 = FRcv(df.y = rice1,f = .1,part.env = 1,intercept = T,boot=1E3) 
 met2 = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3) 
 
+summary.FRcv(met1)$coefficients
+summary.FRcv(met2)$coefficients
 
+summary.FRcv(met1)$frac.ss
+summary.FRcv(met1)$frac.ss
 ```
 
 # References
