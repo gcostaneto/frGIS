@@ -2,23 +2,23 @@
 % Please edit documentation in R/cov-by-trial.R
 \name{cov.by.trial}
 \alias{cov.by.trial}
-\title{Collects environmental covariables from rasters files and geographic information}
+\title{Collection of environmental covariables from raster files and geographic coordinates.}
 \usage{
 cov.by.trial(cov.raster, reference, long, latd, trial)
 }
 \arguments{
-\item{cov.raster}{is a raster stack object containing layers of environmental covariates}
+\item{cov.raster}{is a raster or a raster stack object for environmental covariates}
 
-\item{reference}{is a data.frame containing geographic coordinate information for each location or test to be sampled}
+\item{reference}{is a data.frame object containing the identifiers of places (or environments) and their geographic coordinates of latitude and longitude.}
 
-\item{long}{is a latitude reference vector within referebce data.frame}
+\item{long}{name of the longitude vector inserted in the reference data.frame}
 
-\item{latd}{is a latitude reference vector within referebce data.frame}
+\item{latd}{name of the latitude vector inserted in the reference data.frame}
 
-\item{trial}{is a trial or locaion id within referebce data.frame}
+\item{trial}{name of the trial vector inserted in the reference data.frame}
 }
 \description{
-Collects environmental covariables from rasters files and geographic information
+Collection of environmental covariables from raster files and geographic coordinates.
 }
 \author{
 Germano M F Costa Neto
