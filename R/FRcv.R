@@ -7,7 +7,7 @@
 #' @param f is a fraction of genotypes that must be used as validation set (default f = 0.2, i.e., 20%)
 #' @param part.env is the number of environments that be leave out of the training set (0 > part.env > number of environments). Default is 1 (leave-one-out scheme).
 #' @param boot is the number of boots (default is equal to 1000)
-#' @path.output is the directorie used for output files
+#' @param path.output is the directorie used for output files
 #' @author  Germano M F Costa Neto
 #'
 FRcv = function(df.y, f = .2 , part.env = 1,intercept=TRUE,boot=1E3,seed=3412,path.output=getwd()){
