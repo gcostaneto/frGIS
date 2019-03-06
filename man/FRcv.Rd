@@ -17,6 +17,8 @@ FRcv(df.y, f = 0.2, part.env = 1, intercept = TRUE, boot = 1000,
 \item{intercept}{TRUE (default) or FALSE if considering include fixed genotypic intercept}
 
 \item{boot}{is the number of boots (default is equal to 1000)}
+
+\item{path.output}{is the directorie used for output files}
 }
 \description{
 Cross-validation scheme for FR models
