@@ -20,7 +20,7 @@ predict.Ad = function(coef,cov.raster, df.x = NULL, yx=NULL,intercept=T){
     df.x   = covall$df.x}
   df.x = data.frame(df.x)
   
-  adp = predict.FR2(b = coef,intercept = intercept,new.trial = df.x)
+  adp = predict.FR2(coef = coef,intercept = intercept,new.trial = df.x)
   adp = cbind(coord,adp)
   return(adp)
 }
