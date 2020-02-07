@@ -1,6 +1,9 @@
+#' Predicting yield adaptability values for new locations
+#'
+#'
+#' @description returns a summary of factorial regression analysis from FR.model
+#' @param fr.object fr.object
 
-
-## adicionar if else para intercepeto
 
 summary.FRcv = function(fr.object){
   require(Rmisc)

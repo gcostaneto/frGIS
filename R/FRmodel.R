@@ -21,8 +21,7 @@
 
 
 FR.model = function(df.y, intercept=TRUE){
-  require(plyr)
-  require(reshape2)
+
 
   Y = df.y[,c(1,2,3)]
   names(Y) = c("env","gid","value")

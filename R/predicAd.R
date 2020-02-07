@@ -10,18 +10,16 @@
 #' @author  Germano M F Costa Neto
 
 predict.Ad = function(coef,cov.raster, df.x = NULL, yx=NULL,intercept=T){
-  
-  require(raster)
+
   coord  = yx
-  
+
   if(is.null(df.x) == T){
     covall = rasterTodf(cov.raster)
     coord  = covall$coord
     df.x   = covall$df.x}
   df.x = data.frame(df.x)
-  
+
   adp = predict.FR2(coef = coef,intercept = intercept,new.trial = df.x)
   adp = cbind(coord,adp)
   return(adp)
 }
-

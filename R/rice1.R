@@ -7,7 +7,10 @@
 #' Crop management and sowing dates were performed according to the current farmer management at
 #' region where each trial was conducted. This experimental design and trial management are standardized
 #' for cultivar testing trials in upland rice breeding program of Embrapa.
-#'
+#'@docType data
+#'@usage data(rice1)
+#'@examples
+#' data(rice1); head(rice1)
 #' @format A data frame with 300 rows and 6 variables:
 #' \describe{
 #'   \item{env}{environmental id (factor)}
