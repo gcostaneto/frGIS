@@ -1,5 +1,7 @@
 FR.sampling = function(df.y, f = .2 , part.env = 1,intercept=TRUE){
-
+require(reshape2)
+require(plyr)
+  
   Y = df.y[,c(1,2,3)]
   names(Y) = c("env","gid","value")
   Y$env = as.factor(Y$env)
