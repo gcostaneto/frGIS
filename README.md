@@ -68,9 +68,9 @@ output2 = predict.Ad(b=coef.2,cov.raster = cov.coord,intercept = T)
 
 Costa-Neto, G.M.F., Morais Júnior, O.P., Heinemann, A.B. et al. A novel GIS-based tool to reveal spatial trends in reaction norm: upland rice case study. **Euphytica** 216, 37 (2020). https://doi.org/10.1007/s10681-020-2573-4
 
-Martins, A. S. (2004). Aplicação de sistema de informações geográficas no estudo da interação genótipos com ambientes. Mestrado em Agronomia, Escola de Agronomia e Engenharia de Alimentos. Universidade Federal de Goiás, Goiânia (in portuguese).
+Martins, A. S. (2004). Aplicação de sistema de informações geográficas no estudo da interação genótipos com ambientes. Master's thesis in Agronomy, Escola de Agronomia e Engenharia de Alimentos. Universidade Federal de Goiás, Goiânia (in portuguese).
 
-Costa-Neto, G. M. F. (2017). Integrating environmental covariates and thematic maps into genotype by environment interaction analysis in upland rice. Mestrado em Agronomia, Escola de Agronomia e Engenharia de Alimentos. Universidade Federal de Goiás, Goiânia
+Costa-Neto, G. M. F. (2017). Integrating environmental covariates and thematic maps into genotype by environment interaction analysis in upland rice. Master's thesis in Genetics and Plant Breeding, Escola de Agronomia e Engenharia de Alimentos. Universidade Federal de Goiás, Goiânia
 
 # Acknowledgements
 
