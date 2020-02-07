@@ -1,8 +1,8 @@
 # frGIS
-Tools for implementing factoriak regression models (FR) to study the effects of GxE interaction on yield adaptability.
+Tools for implementing factorial regression models (FR) to study the effects of GxE interaction on yield adaptability.
 
 ##  Package overview
-frGIS is a useful package for breeders and statisticians interested in guiding diagnostic recommendations for new cultivars and evaluating the phenotypic plasticity of germplasm against spatial variations in a given region. This package can also be used to support the targeting of products in pre-commercial material evaluation phases, guiding the allocation of effort and resources to priority target regions.
+frGIS is a useful package for breeders and statisticians interested in guiding diagnostic recommendations for new cultivars and evaluating the phenotypic plasticity of germplasm against spatial variations in a given region. This package can also be used to support the targeting of products in pre-commercial material evaluation phases, guiding the allocation of effort and resources to priority target regions. Until now, this package only employes least-squares methods under the parametric point of view. Future updates will be focused on including iterative non-parametric methods, bayesian approaches, and ridge regressions. We are open to establishing partnerships in order to improve the tools achieved here.
 
 ## Background
 
