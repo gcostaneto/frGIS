@@ -38,9 +38,9 @@ FR.model = function(df.y, intercept=TRUE){
   form = as.formula(form)
   Y = cbind(Y,df.cov)
   out.coef = predK = out.ss   = NULL
-  if(intercept == FALSE){modelK   = ddply(Y, .(gid), function(x) coef(lm(form,x)))}
-  if(intercept == TRUE) {modelK   = ddply(Y, .(gid), function(x) coef(lm(form,x)));names(modelK)[2]="Mean"}
-  anovaK   = ddply(Y, .(gid), function(x) data.frame(source=rownames(anova(lm(form,x))),anova(lm(form,x))))
+  if(intercept == FALSE){modelK   = plyr::ddply(Y, .(gid), function(x) coef(lm(form,x)))}
+  if(intercept == TRUE) {modelK   =  plyr::ddply(Y, .(gid), function(x) coef(lm(form,x)));names(modelK)[2]="Mean"}
+  anovaK   =  plyr::ddply(Y, .(gid), function(x) data.frame(source=rownames(anova(lm(form,x))),anova(lm(form,x))))
   out.coef = rbind(out.coef ,data.frame(modelK))
   out.ss   = rbind(out.ss   ,data.frame(anovaK))
 
