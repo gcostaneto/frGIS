@@ -22,47 +22,20 @@ require(frGIS)
 
 #' data set
 #'--------------------------------------------------------------------------
-data(rice2)
-head(rice2)
+data(rice1) # upland rice data set
+head(rice1)
 
 #' Factorial regression
 #'--------------------------------------------------------------------------
-output = FR.model(df.y = rice2,intercept = T)
+output = FR.model(df.y = rice1,intercept = T)
 
 output$coefficients   # genotypic coefficients
 output$sum.of.squares # anova output for each genotype
 output$frac.ss        # fraction of phenotypic variance explained by the effect of environment covariates
 
-#' Cross-validation
-#'--------------------------------------------------------------------------
-output = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3) # 1000-boot, leaving one environment out plus 10% of the genotypes
+### Other functions
 
-#- Examples
-#'--------------------------------------------------------------------------
-met1 = FRcv(df.y = rice1,f = .1,part.env = 1,intercept = T,boot=1E3) 
-met2 = FRcv(df.y = rice2,f = .1,part.env = 1,intercept = T,boot=1E3) 
-
-summary.FRcv(met1)$coefficients
-summary.FRcv(met2)$coefficients
-
-summary.FRcv(met1)$frac.ss
-summary.FRcv(met1)$frac.ss
-
-```
-
-### Predicting yield adaptability trends (Surface trend analysis with yield adaptability)
-
-```R
-require(plyr)
-
-coef.1 = dcast(summary.FRcv(met1)$coefficients, formula = gid~variable)
-coef.2 = dcast(summary.FRcv(met2)$coefficients, formula = gid~variable)
-
-output1 = predict.Ad(b=coef.1,cov.raster = cov.coord,intercept = T)
-output2 = predict.Ad(b=coef.2,cov.raster = cov.coord,intercept = T)
-
-```
-
+The rest of the functions are being updated. Soon we will update the page.
 
 # References
 
