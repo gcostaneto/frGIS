@@ -55,6 +55,7 @@ summary.FRcv(met1)$frac.ss
 ```R
 require(plyr)
 
+# cov.coord = raster of environmental variables
 coef.1 = dcast(summary.FRcv(met1)$coefficients, formula = gid~variable)
 coef.2 = dcast(summary.FRcv(met2)$coefficients, formula = gid~variable)
 
