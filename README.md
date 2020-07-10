@@ -1,4 +1,4 @@
-# *frGIS* a tool to couple geographic information systems (GIS) with factorial regression on GxE analysis
+# *frGIS*: a tool for implemeting GIS-based tools with factorial regression on GxE analysis
 
 
 ##  Package overview
