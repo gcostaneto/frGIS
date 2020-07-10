@@ -1,4 +1,4 @@
-# *frGIS*:**Tools for implementing factorial regression models (FR) on the GxE interaction analysis**
+# *frGIS*:**Tools for implementing geographic information systems (GIS) and factorial regression models (FR) on plant breeding**
 
 
 ##  Package overview
