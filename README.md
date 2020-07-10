@@ -1,4 +1,4 @@
-# *frGIS*: ** integrating geographic information systems (GIS) and factorial regression models (FR) on plant breeding**
+# *frGIS* a tool to couple geographic information systems (GIS) with factorial regression on GxE analysis
 
 
 ##  Package overview
