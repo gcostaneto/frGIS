@@ -1,6 +1,6 @@
 # *frGIS*: a tool for implemeting GIS-based tools with factorial regression on GxE analysis
 
-> Package under maintence (and updates) between October 1th and October 15th. Sorry for the incovenience.
+> ATTENTION: Package under maintence (and updates). Sorry for the incovenience.
 
 
 ##  Package overview
