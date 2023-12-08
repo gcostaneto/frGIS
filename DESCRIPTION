@@ -2,9 +2,9 @@ Package: frGIS
 Type: Package
 Title: Yield adaptability analysis based on factorial regression and
         environmental covariates
-Version: 0.1.0
+Version: 0.1.9
 Author: Germano Martins F Costa-Neto
-Maintainer: GMF Costa-Neto <germano.cneto@usp.br>
+Maintainer: G Costa-Neto <germano.cneto@gmail.com>
 Description: Returns factorial regression from phenotypic and environmental data. 
              The number of phenotypic observations can not exceed the number of parameters 
              (coefficients of the genotypes for each covariate) 
@@ -14,6 +14,15 @@ Description: Returns factorial regression from phenotypic and environmental data
 License: MIT
 Encoding: UTF-8
 LazyData: true
+Imports:
+    plyr,
+    doParallel,
+    parallel,
+    foreach,
+    raster,
+    terra,
+    reshape2,
+    sf
 RoxygenNote: 6.1.1
 NeedsCompilation: no
 Packaged: 2019-02-27 17:10:31 UTC; germano
